@@ -1,0 +1,73 @@
+@import 'reset';
+@import 'settings';
+
+
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 13px;
+    color: $font-color;
+    height: 100vh;
+    background: no-repeat bottom 20rem left -15rem/70% url("../images/bg-pattern-top.svg"), 
+                no-repeat top 20rem right -15rem/70% url("../images/bg-pattern-bottom.svg");    
+    background-color: $background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card{
+        background-color: #ffff;
+        border-radius: 10px;
+        width: 20rem;
+        height: 22rem;
+        display: grid;
+        grid-template-rows: repeat(3);
+        position: relative;
+
+        &__information{
+            align-self: center;
+            padding: 0rem 0 0rem 0;
+        }
+
+        p,h1{
+            text-align: center;
+            line-height: 2;
+        }
+
+        &__img{
+            position: absolute;
+            top: 7rem;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            img{
+                border: 5px solid #ffff;
+                border-radius: 50%;
+            }
+        };
+
+        &__head{
+            border-radius: 10px 10px 0 0;
+            height: 7rem;
+            background-image: url("../images/bg-pattern-card.svg");
+        }
+
+        &__footer{
+            border-top: 1px solid $font-color;   
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            padding: 0 2rem 0 2rem;
+                       
+            p{
+                line-height: 1.2;
+            }
+
+            div {
+               align-self: center;
+               justify-self: center;     
+            }
+        }
+    }
+}
+
+

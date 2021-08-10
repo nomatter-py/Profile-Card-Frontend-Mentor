@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.bolder {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3248;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 13px;
+  color: #6a6f81;
+  height: 100vh;
+  background: no-repeat bottom 20rem left -15rem/70% url("../images/bg-pattern-top.svg"), no-repeat top 20rem right -15rem/70% url("../images/bg-pattern-bottom.svg");
+  background-color: #19a2ae;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .card {
+  background-color: #ffff;
+  border-radius: 10px;
+  width: 20rem;
+  height: 22rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: ()[3];
+      grid-template-rows: repeat(3);
+  position: relative;
+}
+
+body .card__information {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0rem 0 0rem 0;
+}
+
+body .card p, body .card h1 {
+  text-align: center;
+  line-height: 2;
+}
+
+body .card__img {
+  position: absolute;
+  top: 7rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .card__img img {
+  border: 5px solid #ffff;
+  border-radius: 50%;
+}
+
+body .card__head {
+  border-radius: 10px 10px 0 0;
+  height: 7rem;
+  background-image: url("../images/bg-pattern-card.svg");
+}
+
+body .card__footer {
+  border-top: 1px solid #6a6f81;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 0 2rem 0 2rem;
+}
+
+body .card__footer p {
+  line-height: 1.2;
+}
+
+body .card__footer div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+/*# sourceMappingURL=main.css.map */
